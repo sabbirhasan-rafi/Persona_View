@@ -73,7 +73,7 @@ ol {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 12px 22px;
+  padding: 24px 22px;
 }
 
 .top {
@@ -91,9 +91,18 @@ ol {
   font-size: 155px;
 }
 .right_content {
+  display: flex;
   flex: 2;
   height: 80%;
   align-items: center;
+  overflow-x: auto;
+  overflow-y: hidden;
+  flex-shrink: 0;
+  gap: 12px;
+  padding: 00 26px;
+}
+.right_content::-webkit-scrollbar {
+  display: none;
 }
 .card-box {
   display: flex;
@@ -101,9 +110,12 @@ ol {
   align-items: center;
   padding: 0 26px;
   overflow: hidden;
+  background: rgb(236, 236, 11);
 }
 .card {
   width: 275px;
+  flex-shrink: 0;
+
   height: 90%;
   border-radius: 25px;
   overflow: hidden;
