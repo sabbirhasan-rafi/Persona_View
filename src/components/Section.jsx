@@ -5,6 +5,7 @@ const Section = () => {
   return (
     <div className="section">
       <Leftcontent />
+      <Rightcards />
     </div>
   );
 };
